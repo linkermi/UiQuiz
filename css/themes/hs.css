@@ -145,7 +145,7 @@ label.ui-btn {
 .ui-btn-icon-top:after,
 .ui-btn-icon-bottom:after,
 .ui-btn-icon-notext:after {
-	background-color: #000000 /*{global-icon-color}*/;
+	background-color: black /*{global-icon-color}*/;
 	background-color: rgba(0,0,0,0.15) /*{global-icon-disc}*/;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -159,7 +159,7 @@ html .ui-alt-icon.ui-checkbox-off:after,
 html .ui-alt-icon.ui-radio-off:after,
 html .ui-alt-icon .ui-checkbox-off:after,
 html .ui-alt-icon .ui-radio-off:after {
-	background-color: black /*{global-icon-color}*/;
+	background-color: red /*{global-icon-color}*/;
 	background-color: rgba(0,0,0,0.15) /*{global-icon-disc}*/;
 }
 /* No disc */
