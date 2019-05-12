@@ -950,13 +950,15 @@ tr:nth-child(even) {
 #header{
 	vertical-align:central;
 	float:left;
-	background-color: #fc0;
+	
 	clear:both;
 	width: 100%;
         position: fixed;
         color: #000000;
         text-shadow: none;
         font-weight: bold;
+        background-color: #ff9777;
+        font-family: cursive
       
 	
 }
@@ -965,9 +967,136 @@ tr:nth-child(even) {
 	font-size: 14px;
 }
 #menu{
-	float: left;	
+	text-align:center;	
+        font-size: 60px;
+         width: 100%;
+         height:80px;
 }
-	
+
+#menu > a {
+   width:90px;
+    height: 50px;
+    background-color: #736d73;}
+
+#view1 > h1 {
+    text-align: center;
+    height: 80px;
+    font-size:70px;
+    font-family: cursive;
+    margin-top:100px;
+}
+
+#view1 > a:nth-child(2) {
+ 
+    width:55%;
+    height:100px;
+    box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+    margin:260px;
+    font-family: cursive;
+    font-size:32px;
+
+}
+#view1 > a:nth-child(2) > p {
+    font-size: 32px;
+}
+
+#view1 > a:nth-child(3) {
+    width:55%;
+    height:100px;
+    box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+    margin:260px;
+    font-family: cursive;
+    font-size:32px;
+
+}
+#view1 > a:nth-child(3) > p{
+font-size:32px;
+}
+
+
+#loginForm > div {
+    margin:200px;
+    padding:20px;
+    font-size:35px;
+}
+#login {
+    font-size:36px;
+    font-family: cursive;
+}
+#loginForm > div > a {
+    font-size:36px;
+    font-family: cursive;
+}
+
+#menupanel {
+    font-size:80px;
+    width:100% !important;
+    font-family:cursive;
+}
+
+#menupanel > div > a.ui-link.ui-btn.ui-btn-a.ui-icon-home.ui-btn-icon-left.ui-shadow.ui-corner-all
+{
+    font-family: cursive;
+}
+
+#menupanel > div > a.ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all
+{
+    font-family: cursive;
+}
+
+#avatarfieldset > div.ui-controlgroup-label > legend
+{
+    font-size:36px;
+    font-family: cursive;
+}
+
+#page1 {
+    margin-top: 100px;
+}
+#laufend > tbody > tr:nth-child(1) > td:nth-child(4) > a{
+    width:80px;
+}
+#laufend > tbody > tr:nth-child(2) > td:nth-child(4) > a
+{
+    width:80px;
+}
+
+#laufend > tbody > tr:nth-child(3) > td:nth-child(4) > a {
+    width:80px;
+}
+#Kategorie1fieldset {
+    margin:50px;
+    
+    
+}
+#Kategorie2fieldset {
+    margin: 50px;
+}
+#Kategorie1fieldset > div.ui-controlgroup-controls > div:nth-child(1) > label    
+{
+    width:100px;
+    text-align: center;
+    font-family: cursive;
+    font-size:20px;
+    margin:10px;
+}
+
+#create  {
+    
+    text-align: center;
+    float:none;
+  width:50%;
+    margin:220px;
+    height:220px;
+    font-size:36px;
+    
+}
 #search{
 	float: right;
         
