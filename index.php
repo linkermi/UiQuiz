@@ -15,7 +15,7 @@
 <script src="includes/js/additional-methods.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
 <script src="p5/p5.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
 
 
 <script type="text/javascript">

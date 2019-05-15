@@ -168,7 +168,7 @@ $Ergebnis=  Core::$view->Ergebnis;
 }if($Ergebnis=="zu spät"){
     ?>
     <div class= "ui-btn ui-corner-all ui-btn-inactive">ZU SPÄT</div>
-    Die richtige Antwort lautet
+    <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn ui-corner-all ui-btn-active"><?=$antwortKorrekt->Antworttext;?></div>
     
     
@@ -177,7 +177,7 @@ $Ergebnis=  Core::$view->Ergebnis;
  if($Ergebnis=="falsch"){
       ?>
     <div class= "ui-btn-active ui-btn ui-corner-all ui-btn-inactive">FALSCH</div>
-    Die richtige Antwort lautet
+    <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     <div><?=$runde->Zeit?> Sekunden</div>
    

@@ -151,6 +151,8 @@ label.ui-btn {
 	background-repeat: no-repeat;
 	-webkit-border-radius: 1em;
 	border-radius: 1em;
+        height: 50px;
+        width: 50px;
 }
 /* Alt icons */
 .ui-alt-icon.ui-btn:after,
@@ -243,6 +245,8 @@ html body .ui-group-theme-a .ui-bar-inherit {
         font-family: 'Roboto';
 	color: #000000 /*{a-page-color}*/;
 	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
+        font-size: 20px;
+        margin-left: 250px;
        
 }
 /* Body: Read-only lists, text inputs, collapsible content */
@@ -357,6 +361,14 @@ html body div.ui-slider-track.ui-body-a .ui-btn-active {
 	border-color: #222222 /*{a-active-border}*/;
 	color: #2f2f2f /*{a-active-color}*/;
 	text-shadow: 0 /*{a-active-shadow-x}*/ 0 /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/  /*{a-active-shadow-color}*/;
+        
+        text-align: center;
+        width: 500px;
+        font-size: 36px;
+        margin-left: 200px;
+    
+
+
 }
 /* Active radio button icon */
 .ui-page-theme-a .ui-radio-on:after,
@@ -950,14 +962,14 @@ tr:nth-child(even) {
 #header{
 	vertical-align:central;
 	float:left;
-	
+	height:170px;
 	clear:both;
 	width: 100%;
         position: fixed;
         color: #000000;
         text-shadow: none;
         font-weight: bold;
-        background-color: #ff9777;
+        background-color: #ffa500;
         font-family: cursive
       
 	
@@ -1061,14 +1073,17 @@ font-size:32px;
 }
 #laufend > tbody > tr:nth-child(1) > td:nth-child(4) > a{
     width:80px;
+    height:50px;
 }
 #laufend > tbody > tr:nth-child(2) > td:nth-child(4) > a
 {
     width:80px;
+    height:50px;
 }
 
 #laufend > tbody > tr:nth-child(3) > td:nth-child(4) > a {
     width:80px;
+    height:50px;
 }
 #Kategorie1fieldset {
     margin:50px;
@@ -1078,21 +1093,15 @@ font-size:32px;
 #Kategorie2fieldset {
     margin: 50px;
 }
-#Kategorie1fieldset > div.ui-controlgroup-controls > div:nth-child(1) > label    
-{
-    width:100px;
-    text-align: center;
-    font-family: cursive;
-    font-size:20px;
-    margin:10px;
-}
+
 
 #create  {
     
     text-align: center;
     float:none;
   width:50%;
-    margin:220px;
+    margin-left:300px;
+    margin-bottom:100px;
     height:220px;
     font-size:36px;
     
@@ -1138,6 +1147,7 @@ font-size:32px;
 }
 #view1{
 	/* min-height:200px; */
+        border-style: solid;
 }
 #container1 .emojionearea-editor {
   min-height: 3em !important;
@@ -1207,6 +1217,7 @@ background-color: #333333;
 }
 .ui-content{
     padding: 0 !important;
+    margin-top:50px;
 }
 
 .openAnswer{
@@ -1226,6 +1237,9 @@ background-color: #333333;
     border: 1px #000 solid;
     background: darkred;
      float: left;
+     margin-top:30px;
+     margin-bottom: 30px;
+    
 }
 .correctAnswer{
     width: 20px;
@@ -1233,6 +1247,8 @@ background-color: #333333;
     border: 1px #000 solid;
     background: greenyellow;
      float: left;
+     margin-top: 30px;
+     margin-bottom: 30px;
 }
 .result{
    
@@ -1243,7 +1259,8 @@ background-color: #333333;
     text-align: center;
 }
 #laufend, #eigen , #beendet, #eingeladen{
-    font-size: 0.9em;
+    font-size: 2.2em;
+    
     
     
 }
@@ -1270,10 +1287,12 @@ background-color: #333333;
 }
 
  #laufend .openAnswer,#beendet .openAnswer{
-    width: 10px;
+    width: 20px;
+    height: 100px;
     padding-top: 0em;
     margin-bottom :2px;
     margin-top: 3px;
+    margin-right: 5px;
     vertical-align:text-top;
     height:10px;
     border: 1px #000 solid;
@@ -1284,11 +1303,12 @@ background-color: #333333;
      
 }
 #laufend .wrongAnswer,#beendet .wrongAnswer{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     padding-top: 0em;
      margin-bottom :2px;
     margin-top: 3px;
+     margin-right: 5px;
     border: 1px #000 solid;
     background: darkred;
      float: left;
@@ -1297,11 +1317,12 @@ background-color: #333333;
        text-align: center;
 }
 #laufend .correctAnswer,#beendet .correctAnswer{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
        padding-top: 0em;
  margin-bottom :2px;
     margin-top: 3px;
+     margin-right: 5px;
     border: 1px #000 solid;
     background: greenyellow;
      float: left;
@@ -1339,6 +1360,7 @@ background-color: #333333;
 #eigen thead, #laufend thead , #beendet thead, #eingeladen thead{
     background-color: #ffcc00;
     font-size: 0.9em;
+    border-style:solid;
    
     
 }
@@ -1367,6 +1389,11 @@ h5 {
     padding-right: 0.2em;
     margin-top:0px;
     margin-bottom: 0px;
+    font-size: 2.0em;
+    font-family: cursive;
+    border-left: 6px solid #ffff00;
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
 }
 #spielersearch label{
     font-size: 0.8em;
@@ -1377,27 +1404,31 @@ h5 {
 
 #laufend .ui-btn,#beendet .ui-btn{
     height: 22px;
-    width: 2px;
+    width: 80px;
     background-position-x: 5px;
+    
 }
 
 #spielcreate .ui-radio label{
     -webkit-border-radius: 1em /*{global-radii-blocks}*/;
     border-radius: 1em /*{global-radii-blocks}*/;
-   width: 62px;
-   font-size:0.8em;
-   height: 25px;
+   width: 150px;
+   font-size:27px;
+   height: 100px;
 text-align: center;
  padding-top: 17px;
  padding-left: 4px;
  padding-right: 4px;
  text-transform: none;
+ 
        
 }
 #spielcreate  label, #spielcreate legend{
-    font-size: 1em;
+    font-size: 40px;
     font-weight: bold;
     padding-top: 5px;
+    text-align: center;
+    
     
 }
 #spielcreate #nick {
@@ -1451,4 +1482,104 @@ text-align: center;
      
      
     }
+    
+    #view2 {
+        border-style: solid;
+        border-radius: 5px;
+    }
+    
+    #view3 {
+        border-style: solid;
+        border-radius: 5px;
+    }
+    #view4 {
+        border-style: solid;
+        border-radius: 5px;
+        
+    }
+
+    #view1 > p  {
+        font-size: 2.5em;
+        padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: .3em;
+    padding-right: 0.2em;
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-size: 2.0em;
+    font-family: cursive;
+    border-left: 6px solid #ffff00;
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
+    }
+    
+    #spielersearch > div {
+        font-size: 2.0em;
+    }
+    #spielersearch > div > div {
+        width: 500px;
+        margin-left: 100px;
+    }
+ #view2 > div {
+        font-size:36px;
+    }
+    #start {
+        width:600px;
+        font-size:30px;
+        margin-left:95px;
+        margin-top: 50px;
+    }
+    #view1 > a {
+        width:50px;
+        height:50px;
+    }
+    #view1 > div {
+        font-size:36px;
+    }
+    
+    #view1 > div.result {
+        margin-left:350px;
+        
+    }
+    #view1 > div:nth-child(6) > small {
+        margin-top:150px;
+        margin-left:300px;
+    }
+    #beendet {
+        font-size:40px;
+    }
+    
+
+#spielcreate > div > div {
+    font-size:36px;
+}
+#spielcreate > div > div > img {
+    width: 100px;
+    height:100px;
+}
+#header > div:nth-child(3) > img {
+    width:100px;
+    height:100px;
+    
+    
+}
+#menu {
+    width: 500px;
+    font-size:60px;
+    margin-left: 100px;
+
+}
+#logo {
+    margin-bottom:10px;
+    width:200px;
+    height: 200px;
+    text-align: top;
+    margin-top:-150px;
+    
+}
+#lastResult > div.zuspaet.ui-btn.ui-corner-all.ui-btn-inactive{
+    font-size:30px;
+}
+
+
     

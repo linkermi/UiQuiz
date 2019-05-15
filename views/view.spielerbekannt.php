@@ -1,7 +1,7 @@
 <?php
 $liste=Core::$view->bekannteSpieler;
 ?>
-<p><small>letzte Gegner</small></p>
+<p>Letzte Gegner</p>
 <table data-role="table" id="laufend" data-mode="column-toggle: none" class="ui-responsive">
   <thead>
     <tr>
