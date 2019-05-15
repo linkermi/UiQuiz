@@ -365,7 +365,7 @@ html body div.ui-slider-track.ui-body-a .ui-btn-active {
         text-align: center;
         width: 500px;
         font-size: 36px;
-        margin-left: 200px;
+        
     
 
 
@@ -962,7 +962,7 @@ tr:nth-child(even) {
 #header{
 	vertical-align:central;
 	float:left;
-	height:170px;
+	height:186px;
 	clear:both;
 	width: 100%;
         position: fixed;
@@ -1072,18 +1072,15 @@ font-size:32px;
     margin-top: 100px;
 }
 #laufend > tbody > tr:nth-child(1) > td:nth-child(4) > a{
-    width:80px;
-    height:50px;
+    
 }
 #laufend > tbody > tr:nth-child(2) > td:nth-child(4) > a
 {
-    width:80px;
-    height:50px;
+    
 }
 
 #laufend > tbody > tr:nth-child(3) > td:nth-child(4) > a {
-    width:80px;
-    height:50px;
+    
 }
 #Kategorie1fieldset {
     margin:50px;
@@ -1100,7 +1097,7 @@ font-size:32px;
     text-align: center;
     float:none;
   width:50%;
-    margin-left:300px;
+    margin-left:250px;
     margin-bottom:100px;
     height:220px;
     font-size:36px;
@@ -1260,6 +1257,8 @@ background-color: #333333;
 }
 #laufend, #eigen , #beendet, #eingeladen{
     font-size: 2.2em;
+    width:100%;
+    text-align: center;
     
     
     
@@ -1276,6 +1275,7 @@ background-color: #333333;
     padding-left: 0em;
     padding-right: 0em;
     vertical-align: middle;
+     text-align: center;
 }
 #laufend .ui-table-cell-label,#beendet .ui-table-cell-label{
         min-width: 25%;
@@ -1284,11 +1284,13 @@ background-color: #333333;
     padding-left: 0em;
     padding-right: 0em;
     margin: 0em;
+    width: 80px;
+    height: 50px;
 }
 
  #laufend .openAnswer,#beendet .openAnswer{
     width: 20px;
-    height: 100px;
+    
     padding-top: 0em;
     margin-bottom :2px;
     margin-top: 3px;
@@ -1300,6 +1302,7 @@ background-color: #333333;
      float: left;
     font-size: 0em;
       text-align: center;
+    height:20px;
      
 }
 #laufend .wrongAnswer,#beendet .wrongAnswer{
@@ -1403,9 +1406,10 @@ h5 {
 }
 
 #laufend .ui-btn,#beendet .ui-btn{
-    height: 22px;
+    height: 50px;
     width: 80px;
     background-position-x: 5px;
+    margin-left: 0px;
     
 }
 
@@ -1424,12 +1428,14 @@ text-align: center;
        
 }
 #spielcreate  label, #spielcreate legend{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    padding-top: 5px;
-    text-align: center;
-    
-    
+    padding-top: 0px;
+    text-align: -webkit-center;
+    margin-top: -5px;
+    position: relative;
+    top: -250px;
+    left: 40%;
 }
 #spielcreate #nick {
    border: none;
@@ -1467,6 +1473,19 @@ text-align: center;
 }
 #eigen .ui-controlgroup-controls .ui-btn-icon-notext,#eingeladen .ui-controlgroup-controls .ui-btn-icon-notext{
   padding: 0.5em 0.6em;  
+  border-radius: 1em;
+  background-color: black; /* Green */
+  color: white;
+  
+}
+
+
+#eigen .ui-controlgroup-controls:hover .ui-btn-icon-notext:hover,#eingeladen .ui-controlgroup-controls:hover .ui-btn-icon-notext:hover{
+  padding: 0.5em 0.6em;  
+  border-radius: 1em;
+  background-color: yellow; /* Green */
+  color: white;
+  
 }
  .result > div:nth-child(3n+0) {
         margin-right: 4px;
@@ -1526,7 +1545,7 @@ text-align: center;
     #start {
         width:600px;
         font-size:30px;
-        margin-left:95px;
+        margin-left:12%;
         margin-top: 50px;
     }
     #view1 > a {
@@ -1543,7 +1562,7 @@ text-align: center;
     }
     #view1 > div:nth-child(6) > small {
         margin-top:150px;
-        margin-left:300px;
+        margin-left:35%;
     }
     #beendet {
         font-size:40px;
@@ -1552,6 +1571,7 @@ text-align: center;
 
 #spielcreate > div > div {
     font-size:36px;
+    height:500px;
 }
 #spielcreate > div > div > img {
     width: 100px;
@@ -1567,6 +1587,7 @@ text-align: center;
     width: 500px;
     font-size:60px;
     margin-left: 100px;
+    margin-top:20px;
 
 }
 #logo {
@@ -1579,7 +1600,86 @@ text-align: center;
 }
 #lastResult > div.zuspaet.ui-btn.ui-corner-all.ui-btn-inactive{
     font-size:30px;
+    width:500px
+}
+#Kategorie2-button {
+    margin: 0;
+    opacity: 1;
+    width: 300px;
+    height: 50px;
+    margin-left: 100px;
+}
+#Kategorie1-button {
+    margin: 0;
+    opacity: 1;
+    width: 300px;
+    height: 50px;
+    margin-left: 100px;
 }
 
-
+#Kategorie1-button > span {
+    font-size: 40px;
+    text-align: center;
+}
     
+#Kategorie2-button > span {
+    font-size: 40px;
+    text-align: center;
+}
+#eingeladen > tbody > tr > td:nth-child(5) > div > div > a.ui-link.ui-btn.ui-icon-play-circle.ui-btn-icon-notext.ui-shadow.ui-corner-all.ui-mini.ui-first-child {
+    margin-right:50px;
+    
+}
+#header > div:nth-child(3) {
+    margin-top:-20px;
+}
+#eigen > tbody > tr:nth-child(1) > td:nth-child(1) > img{
+    
+}
+#view1 > div:nth-child(2){
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 600px;
+    height: 600px;
+    background-size: 80%;
+    font-size: 50px;
+    
+}
+#view1 > div:nth-child(7){
+     margin-left: 25%;
+}
+
+#view1 > h2 {
+    font-size: 50px;
+    text-align: center;
+}
+#Anordnung {
+    position: absolute;
+    left: 15%;
+}
+#antwortfieldset > div.ui-controlgroup-controls > div:nth-child(1) > label {
+        width: 350px;
+    height: 250px;
+    font-size: 35px;
+    
+}
+#antwortfieldset > div.ui-controlgroup-controls > div:nth-child(2) > label {
+        width: 350px;
+    height: 250px;
+    font-size: 35px;
+}
+#antwortfieldset > div.ui-controlgroup-controls > div:nth-child(3) > label {
+        width: 350px;
+    height: 250px;
+    font-size: 35px;
+}
+#antwortfieldset > div.ui-controlgroup-controls > div:nth-child(4) > label {
+        width: 350px;
+    height: 250px;
+    font-size: 35px;
+}
+#progressBar {
+        max-width: 80%;
+    height: 50px;
+}
+
