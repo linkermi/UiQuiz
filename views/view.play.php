@@ -183,14 +183,22 @@ progress[value]::-moz-progress-bar {
    
   echo "<h2>".$frage->beschreibung." ?</h2>";
   ?>
-   
+  <div id="Anordnung"> 
+      <style>
+          #Anordnung {
+              position:absolute;
+              
+          }
+          </style>
 <form name="reply" id="reply" action="?task=play2&id=<?=$spiel->m_oid;?>" method="post" data-ajax="false">
    
 <input name="runde" id="runde" type="hidden" value="<?=$runde->m_oid;?>"/>
+
 <?php
   help::htmlRadioGroup($antworten,["name"=>"antwort","label"=>"","key"=>"m_oid","text"=>"Antworttext", "class"=>"quizantwort"]);
   
-?><progress value="500" max="500" id="progressBar" ></progress>
+?>
+<progress value="500" max="500" id="progressBar" ></progress>
   
 </form>
-
+  </div>
