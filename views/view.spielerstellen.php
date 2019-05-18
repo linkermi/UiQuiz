@@ -31,5 +31,3 @@ $liste=Core::$view->spieler;
   </tbody>
 </table>
 
-
-Dies ist ein Test. 
