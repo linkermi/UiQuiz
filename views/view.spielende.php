@@ -20,9 +20,9 @@ $antworten=Core::$view->Antworten;
 
   <div class= "ui-btn-active ui-btn ui-corner-all"><b><?=Core::$view->ergebnisText?></b></div>
 
-  <div class="ui-grid-a" style="width: 100%">
-        <div class="ui-block-a points"><img style="border-radius: 2em;margin-top: 3px;margin-right: 5px;" src="includes/images/<?=$ersteller->avatar?>" alt="avatar" width="64" height="64"/></div>   
-    <div class="ui-block-b points" ><img style="border-radius: 2em;margin-top: 3px;margin-right: 5px;" src="includes/images/<?=$teilnehmer->avatar?>" alt="avatar" width="64" height="64"/></div>  
+  <div class="ui-grid-a">
+        <div class="ui-block-a points"><img style="border-radius: 2em;margin-top: 3px;margin-right: 5px;" src="includes/images/<?=$ersteller->avatar?>" alt="avatar" width="100" height="100"/></div>   
+    <div class="ui-block-b points" ><img style="border-radius: 2em;margin-top: 3px;margin-right: 5px;" src="includes/images/<?=$teilnehmer->avatar?>" alt="avatar" width="100" height="100"/></div>  
       <div class="ui-block-a players"><?php
     if($spiel->Ersteller==Core::$user->m_oid){
         echo"<i>".$spiel->Host."</i>";
@@ -66,7 +66,7 @@ $kattexts=substr($kattexts,0,-1);
 </div>
 <div style="clear: both"><small><?=$kattexts?></small></div>
 <div style="clear: both" class="ui-btn-active ui-btn ui-corner-all">Rating</div>
-<div class="ui-grid-a" style="width: 100%">
+<div class="ui-grid-a" >
     <div class="players ui-block-a"><?php printf("%+d",$spiel->ratingPointsA)?></div>
     <div class="players ui-block-b"> <?php printf("%+d",$spiel->ratingPointsB)?></div>
     <div  class="players ui-block-a"><small><?=$spiel->ratingA;?> =&gt;<?=$spiel->ratingPointsA+$spiel->ratingA?></small></div> 
