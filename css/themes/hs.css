@@ -1774,3 +1774,12 @@ text-align: center;
 #view1 > details > summary::-webkit-details-marker {
   display: none
 }
+#view2 > details > summary::-webkit-details-marker {
+  display: none
+}
+#view3 > details > summary::-webkit-details-marker {
+  display: none
+}
+#view4 > details > summary::-webkit-details-marker {
+  display: none
+}
