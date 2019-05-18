@@ -3,8 +3,17 @@ $liste=Core::$view->beendeteSpiele;
 ?>
 
 
-<h5>Kürzlich beendet</h5>
 
+<details>
+    <summary>
+        <h5>Kürzlich beendet
+            <style>
+                h5::after{content: "+";
+                float: right;
+                margin-right: 5px;}
+            </style>
+        </h5>
+    </summary>
 <table id="beendet" data-role="table" data-mode="columntoggle:none" class="ui-responsive">
   <thead>
     <tr>
@@ -54,7 +63,7 @@ $liste=Core::$view->beendeteSpiele;
 ?>
   </tbody>
 </table>
-
+</details>
 
 <script>
     var config = {
