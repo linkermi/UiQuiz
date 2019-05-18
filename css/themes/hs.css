@@ -1284,6 +1284,7 @@ border-radius: 1em /*{global-radii-blocks}*/;
     padding-right: 0em;
     vertical-align: middle;
      text-align: center;
+    margin-left: 1px;
 }
 #laufend .ui-table-cell-label,#beendet .ui-table-cell-label{
         min-width: 25%;
@@ -1770,10 +1771,6 @@ text-align: center;
     background-size: 50%!important;
     font-size: 60px!important;
 }
-#view1 > div:nth-child(2) {
-        margin-left: 17%;
-    margin-top: 15%;
-    width: 60%;
-    font-size: 150%;
-   
+#view1 > details > summary::-webkit-details-marker {
+  display: none
 }
