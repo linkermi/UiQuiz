@@ -3,8 +3,17 @@ $liste=Core::$view->beendeteSpiele;
 ?>
 
 
-<h5>Kürzlich beendet</h5>
 
+<details>
+    <summary>
+        <h5>Kürzlich beendet
+            <style>
+                h5::after{content: "+";
+                float: right;
+                margin-right: 5px;}
+            </style>
+        </h5>
+    </summary>
 <table id="beendet" data-role="table" data-mode="columntoggle:none" class="ui-responsive">
   <thead>
     <tr>
@@ -30,7 +39,7 @@ $liste=Core::$view->beendeteSpiele;
    ?>
 <tr>
     <?php   if($item->userid_1!=Core::$user->m_oid){ $avatar=$item->avatar1;}else{$avatar=$item->avatar2;} ?>
-       <td style="padding-right:0;padding-bottom:0px;"><img style="border-radius: 2em;margin:0;padding-top: 1px;" src="includes/images/<?=$avatar?>" alt="avatar" width="38" height="38"/></td>
+       <td style="padding-right:0;padding-bottom:0px;"><img style="border-radius: 2em;margin:0;padding-top: 1px;" src="includes/images/<?=$avatar?>" alt="avatar" width="80" height="80"/></td>
         <td><?php
            if($item->userid_1!=Core::$user->m_oid){
                echo $item->nickname;
@@ -54,7 +63,7 @@ $liste=Core::$view->beendeteSpiele;
 ?>
   </tbody>
 </table>
-
+</details>
 
 <script>
     var config = {
