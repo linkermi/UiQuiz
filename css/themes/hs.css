@@ -16,7 +16,7 @@
 html {
 font-size: 100%;
 }
-/* Globals */
+/* Globals123 */
 body,
 input,
 select,
@@ -1720,4 +1720,22 @@ text-align: center;
     padding: 2px;
     margin: 3px;
     font-size: 1.2em;
+}
+#aaa > h1 {
+    margin-left: 30%;
+    margin-right: 25%;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 10px #000000;
+}
+#aaa > a:nth-child(2) {
+        width: 50%;
+    margin: 25%;
+    font-size: 30px;
+}
+#aaa > a:nth-child(3){
+    width: 50%;
+    margin: 25%;
+    font-size: 30px;
 }
