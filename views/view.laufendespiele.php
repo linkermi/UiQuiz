@@ -65,7 +65,7 @@ $liste=Core::$view->laufendeSpiele;
      
         <td class="result" style="padding-right:0px;"><?=$item->standingA.$item->standingB?></td>
           <td style="padding:0"><a style="text-decoration: none;"  href="?task=play2&id=<?=$item->m_oid?>"  data-ajax="false"  >
-                  <img style="border-radius: 2em;margin:0;padding-top: 1px;padding-left:0px;margin:0;text-decoration: none" src="includes/images/<?=$avatar?>" alt="avatar" width="36" height="36"/></a>
+                  <img style="border-radius: 2em;margin:0;padding-top: 1px;padding-left:0px;margin:0;text-decoration: none" src="includes/images/<?=$avatar?>" alt="avatar" width="80" height="80"/></a>
       </td>
      
         
