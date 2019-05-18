@@ -16,6 +16,32 @@ $Teilnehmer=Core::$view->Teilnehmer;
         </div>
 </form>
 
+  
+    <script type="text/javascript">
+  
 
+         $(function() {
+         $( "#dialog" ).dialog({
+             autoOpen: false,
+             show: {
+             effect: "blind",
+              duration: 1000
+                },
+            hide: {
+            effect: "explode",
+            duration: 1000
+               }
+              });
+           $( "#opener" ).click(function() {
+           $( "#dialog" ).dialog( "open" );
+            });
+            });
+    </script>
 
+   <div id="dialog" title="Obacht !">
+   <p>Herzlichen Glückwunsch, dein Spiel wird angelegt, jetzt geht's los !!</p>
+  </div>
+ 
+  <button id="opener">Open Dialog</button>
 
+ 
