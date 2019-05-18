@@ -13,8 +13,17 @@ $liste=Core::$view->laufendeSpiele;
 
 
 
-<h5>Laufende Spiele</h5>
 
+<details>
+    <summary>
+    <h5>Laufende Spiele
+        <style>
+            h5::after{content: "+";
+                float: right;
+                margin-right: 5px;}
+        </style>
+    </h5>
+    </summary>
 <table id="laufend" data-role="table" data-mode="columntoggle:none" class="ui-responsive">
   <thead>
     <tr>
@@ -66,3 +75,4 @@ $liste=Core::$view->laufendeSpiele;
 ?>
   </tbody>
 </table>
+</details>
