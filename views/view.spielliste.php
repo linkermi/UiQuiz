@@ -8,9 +8,12 @@ $liste=Core::$view->eigeneEinladungen;
 
 <details>
     <summary><h5>
-            Deine Anfragen<style>h5::after{content: "+";
+            Deine Anfragen
+            <style>h5::after{content: "+";
   float: right;
-  margin-right: 5px;}</style></h5></summary>
+  margin-right: 5px;}
+            </style>
+        </h5></summary>
 
 <table id="eigen" data-role="table"  data-mode="columntoggle:none" class="ui-responsive">
   <thead>
