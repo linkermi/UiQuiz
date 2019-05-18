@@ -17,4 +17,33 @@ $a=1;
 
 
 
+ <div id="dialog" title="Obacht !">
+   <p>Herzlichen Glückwunsch, dein Spiel wird angelegt, jetzt geht's los !!</p>
+  </div>
+ 
+  <button id="opener">Open Dialog</button>
 
+
+  
+    <script type="text/javascript">
+  
+
+         $(function() {
+         $( "#dialog" ).dialog({
+             autoOpen: false,
+             show: {
+             effect: "blind",
+              duration: 1000
+                },
+            hide: {
+            effect: "explode",
+            duration: 1000
+               }
+              });
+           $( ".ui-link  ui-btn ui-icon-plus ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" ).click(function() {
+           $( "#dialog" ).dialog( "open" );
+            });
+            });
+    </script>
+
+  
