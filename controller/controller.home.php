@@ -1,5 +1,5 @@
 <?php
-Core::loadJavascript("views/js/partikel.js");
+
 Core::$view->path["view1"]="views/view.home.php";
 
 if(isset(Core::$user->m_oid)){
