@@ -1,12 +1,16 @@
 <?php
 $liste=Core::$view->eigeneEinladungen;
 ?>
-<h5>Deine Anfragen</h5> 
 
 
 
 
 
+<details>
+    <summary><h5>
+            Deine Anfragen<style>h5::after{content: "+";
+  float: right;
+  margin-right: 5px;}</style></h5></summary>
 
 <table id="eigen" data-role="table"  data-mode="columntoggle:none" class="ui-responsive">
   <thead>
@@ -37,3 +41,4 @@ $liste=Core::$view->eigeneEinladungen;
 ?>
   </tbody>
 </table>
+</details>
