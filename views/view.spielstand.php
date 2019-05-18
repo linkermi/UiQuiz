@@ -13,7 +13,7 @@ if($spiel->wait){
 }
 ?>
 
- <div class="ui-grid-a" style="width: 100%">
+ <div class="ui-grid-a">
       <div class="ui-block-a players"><?php
     if($spiel->Ersteller==Core::$user->m_oid){
         echo"<i>".$spiel->Host."</i>";
