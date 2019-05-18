@@ -1,8 +1,16 @@
 <?php
 $liste=Core::$view->fremdeEinladungen;
 ?>
-<h5>Eingeladen zu</h5>
 
+<details>
+    <summary>
+    <h5>Eingeladen zu
+        <style>h5::after{content: "+";
+  float: right;
+  margin-right: 5px;}
+            </style>
+   </h5>
+    </summary>
 <table id="eingeladen" data-role="table" data-mode="columntoggle:none" class="ui-responsive">
   <thead>
     <tr>
@@ -34,3 +42,4 @@ $liste=Core::$view->fremdeEinladungen;
 ?>
   </tbody>
 </table>
+</details>
