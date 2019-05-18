@@ -33,7 +33,7 @@ $liste=Core::$view->eigeneEinladungen;
      
    ?>
 <tr>
-      <td style="padding-right:0;padding-bottom:0px;"><img style="border-radius: 2em;margin:0;padding-top: 1px;" src="includes/images/<?=$item->avatar?>" alt="avatar" width="38" height="38"/></td>
+      <td style="padding-right:0;padding-bottom:0px;"><img style="border-radius: 2em;margin:0;padding-top: 1px;" src="includes/images/<?=$item->avatar?>" alt="avatar" width="80" height="80"/></td>
       <td><?=$item->nickname?></td>
       <td style="text-align: right"><?=$item->rating?></td>
      
