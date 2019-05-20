@@ -9,6 +9,7 @@
 <link href="css/themes/jqm-icon-pack-fa.css" rel="stylesheet" type="text/css" />
 <link href="css/jquery.mobile.custom.structure.min.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <script src="includes/js/jquery-2.1.3.min.js"></script>
 <script src="includes/js/jquery.mobile.custom.min.js"></script>
 <script src="includes/js/jquery.validate.min.js"></script>
