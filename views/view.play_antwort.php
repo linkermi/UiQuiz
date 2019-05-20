@@ -213,7 +213,7 @@ if($spiel->wait){
 }if($Ergebnis=="zu spät"){
     ?>
     <div class= "zuspaet ui-btn ui-corner-all ui-btn-inactive">ZU SPÄT</div>
-    Die richtige Antwort lautet
+    <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn ui-corner-all ui-btn-active"><?=$antwortKorrekt->Antworttext;?></div>
     
     
@@ -222,7 +222,7 @@ if($spiel->wait){
  if($Ergebnis=="falsch"){
       ?>
     <div class= "falsch ui-btn-active ui-btn ui-corner-all ui-btn-inactive">FALSCH</div>
-    Die richtige Antwort lautet
+    <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
    
    
@@ -246,6 +246,7 @@ if($spiel->wait){
     <?php
     }
     ?>
-  <a href="?task=home" data-role="button"  class="ui-link ui-btn ui-icon-back ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ">Zurück</a>
-
+    <a href="?task=home">  
+  <i href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
+    </a>
 
