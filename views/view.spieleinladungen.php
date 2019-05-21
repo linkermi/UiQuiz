@@ -21,7 +21,7 @@ $liste=Core::$view->fremdeEinladungen;
       <th data-priority="persist"></th>
       <th data-priority="2">Rating</th>
       <th data-priority="3">wann</th>
-      <th data-priority="4">Spielen Löschen</th>
+      <th data-priority="4">Spielen | Löschen</th>
     
     </tr>
   </thead>
@@ -37,7 +37,15 @@ $liste=Core::$view->fremdeEinladungen;
       <td><?=$item->rating?></td>
       <!-- <td><a href="?task=spielerstellen&id=<?=$item->m_oid?>&nick=<?=$item->nickname?>" data-role="button">einladen</a></td> -->
       <td><?=date("d.m.",$item->erstellDatum)?></td>
-      <td> <div data-role="controlgroup" data-type="horizontal"><a href="?task=accept&id=<?=$item->id?>&accept=true" data-role="button" data-mini="true" data-iconpos="notext" class="ui-link ui-btn ui-icon-play-circle ui-btn-icon-notext ui-shadow ui-corner-all ui-mini">spielen</a><a data-role="button" data-mini="true" data-iconpos="notext" class="ui-link ui-btn ui-icon-trash-o ui-btn-icon-notext ui-shadow ui-corner-all ui-mini" href="?task=accept&id=<?=$item->id?>&accept=false">ablehnen</a></div></td>
+      <td> <div data-role="controlgroup" data-type="horizontal">
+              <a href="?task=accept&id=<?=$item->id?>&accept=true" >
+                  <i href="?task=accept&id=<?=$item->id?>&accept=true" data-role="button"  class="far fa-play-circle"> </i>
+              </a>
+              <a href="?task=accept&id=<?=$item->id?>&accept=false">
+              <i data-role="button"  class="far fa-trash-alt" href="?task=accept&id=<?=$item->id?>&accept=false"></i>
+              </a>
+          </div>
+      </td>
         
      
 </tr>
