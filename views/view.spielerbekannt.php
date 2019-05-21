@@ -1,7 +1,7 @@
 <?php
 $liste=Core::$view->bekannteSpieler;
 ?>
-<p>Letzte Gegner</p>
+<h5>Letzte Gegner</h5>
 <table data-role="table" id="laufend" data-mode="column-toggle: none" class="ui-responsive">
   <thead>
     <tr>
@@ -24,7 +24,11 @@ $liste=Core::$view->bekannteSpieler;
       <td><?=$item->rating?></td>
       <td><?=$item->Partien?></td>
     
-       <td><a href="?task=spielerstellen&id=<?=$item->m_oid?>" data-role="button" data-mini="true" class="ui-link ui-btn ui-icon-plus ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ">einladen</a></td>
+       <td >
+           <a href="?task=spielerstellen&id=<?=$item->m_oid?>" data-role="button">
+               <i href="?task=spielerstellen&id=<?=$item->m_oid?>" data-role="button" class="fas fa-plus-circle" > </i>
+           </a>
+       </td>
      
 </tr>
 <?php }
