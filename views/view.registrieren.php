@@ -29,9 +29,6 @@ $avatars=Core::$view->avatars;
 
 </style>
 
-
-</div>
-
 <style>
     #Johnny{display: block;
   position: relative; 
@@ -47,3 +44,5 @@ $avatars=Core::$view->avatars;
   background-size: cover; }
     
 </style>
+</div>
+

@@ -179,9 +179,9 @@ $Teilnehmer=Core::$view->Teilnehmer;
     </script>
 
    <div id="dialog" title="Obacht !">
-   <p>Herzlichen Glückwunsch, dein Spiel wird angelegt, jetzt geht's los !!</p>
+   <p>Hallo werter Spieler, hier kannst Du zwei Spielkategorien bestimmen aus einer Auswahl von 8 möglichen Kategorien. Du darfst nicht zweimal die gleiche Kategorie auswählen</p>
   </div>
  
-  <button id="opener">Open Dialog</button>
+  <button id="opener">Hilfe- Was soll ich machen ?</button>
 
  
