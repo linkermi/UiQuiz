@@ -21,6 +21,6 @@ $avatars=Core::$view->avatars;
 <div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px; ">
     
     
-<iframe src="views/view.roterKreis.php" width="100%" height="100%" style="z-index: 3"></iframe>
+<iframe src="views/view.roterKreis.php" width="100%" height="100%" style="z-index: 5"></iframe>
 </div>
 
