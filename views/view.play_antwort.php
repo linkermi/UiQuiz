@@ -3019,19 +3019,21 @@ if (IS_HEADER) {
     <?php
 }if($Ergebnis=="zu spät"){
     ?>
-    <div class= "zuspaet ui-btn ui-corner-all ui-btn-inactive">ZU SPÄT</div>
-    <p>Die richtige Antwort lautet</p>
-    <div class= "ui-btn ui-corner-all ui-btn-active"><?=$antwortKorrekt->Antworttext;?></div>
+<div>
+ <div style="width:1000px; height: 2000px; z-index:0;">
     
     
-    
-    
-    <div style="width: 500px; height: 500px; position: absolute;margin-left: 50px;margin-top: 50px; ">
-    
-    
-<iframe src="views/view.Feuerwerk.php" width="100%" height="100%" style="z-index: 5"></iframe>
-</div>
+          <iframe src="views/view.Feuerwerk.php" style="width:1000px; height: 2000px; z-index:0;" ></iframe>
+   </div>
 
+    <div style="z-index:1" class= "zuspaet ui-btn ui-corner-all ui-btn-inactive">ZU SPÄT</div>
+    <p>Die richtige Antwort lautet</p>
+    <div style="z-index:1" class= "ui-btn ui-corner-all ui-btn-active"><?=$antwortKorrekt->Antworttext;?></div>
+</div>
+    
+    
+    
+   
     
     
     
