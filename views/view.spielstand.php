@@ -54,4 +54,6 @@ if($spiel->wait){
  <button type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
 </form>
- <a href="?task=home" data-role="button"  class="ui-link ui-btn ui-icon-back ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ">Zurück</a>
+<a href="?task=home">
+ <i href="?task=home" data-role="button"  class="fas fa-angle-double-left"></i>
+</a>
