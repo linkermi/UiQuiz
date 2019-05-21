@@ -1,3 +1,5 @@
+<div id="Johnny">
+
 <div id="aaa" style="z-index: 4;opacity: 0.5;position: absolute"> 
 
 <?php
@@ -18,9 +20,30 @@ $avatars=Core::$view->avatars;
 </div>
 
 
-<div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px; ">
-    
-    
-<iframe src="views/view.roterKreis.php" width="100%" height="100%" style="z-index: 3"></iframe>
+
+
+
+<style> #login{
+    background-color: #f90a0a !important/*{a-bup-background-color}*/;}
+
+
+</style>
+
+
 </div>
 
+<style>
+    #Johnny{display: block;
+  position: relative; 
+  overflow: hidden; 
+  max-width: 100vw; 
+  min-height: 100vh; 
+  margin: 0; 
+  padding: 0;
+  background-image: url( 'https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg' ); 
+  background-color: black; 
+  background-position: center bottom; 
+  background-repeat: no-repeat; 
+  background-size: cover; }
+    
+</style>
