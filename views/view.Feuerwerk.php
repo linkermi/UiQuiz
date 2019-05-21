@@ -114,13 +114,15 @@
 </div>
 
 <style>
+    
+    /*
     $small-bp: 640px;
 $large-bp: 840px;
 
 $ui-opacity: 0.5;
 $ui-color: rgba(#fff, $ui-opacity);
 $font: 'Russo One', arial, sans-serif;
-$letter-spacing: 0.06em;
+$letter-spacing: 0.06em; */
 
 * {
 	position: relative;
@@ -138,10 +140,10 @@ html {
 
 body {
 	overflow: hidden;
-	color: $ui-color;
-	font-family: $font;
+	color: rgba (255,255,255, 0.5);
+	font-family: 'Russo One', arial, sans-serif;
 	line-height: 1.25;
-	letter-spacing: $letter-spacing;
+	letter-spacing: 0.06em;
 }
 
 
@@ -172,34 +174,33 @@ body {
 	width: 100%;
 	align-self: center;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: uppercase;}
 	
-&__header {
+.loading-header {
 		font-size: 2.2em;
 	}
 	
-&__status {
+.loading-status {
 		margin-top: 1em;
 		font-size: 0.8em;
 		opacity: 0.75;
 	}
-}
 
 .stage-container {
-	// Keep menu blur contained
+	/* // Keep menu blur contained */
 	overflow: hidden;
-	// Let border width add to size
+	/* // Let border width add to size */
 	box-sizing: initial;
 	border: 1px solid #222;
-	// Allow border to be hidden when fullscreen
+	/* // Allow border to be hidden when fullscreen */
 	margin: -1px;
-	
-	// no need for border on small screens, especially since it causes horizontal scrolling on iOS.
-	@media (max-width: $large-bp) {
+	}
+	/* // no need for border on small screens, especially since it causes horizontal scrolling on iOS. */
+	@media .stage-container (max-width: $large-bp) {
 		border: none;
 		margin: 0;
 	}
-}
+
 
 .canvas-container {
 	width: 100%;
@@ -233,7 +234,7 @@ body {
 				opacity: 1;
 		}
 	}
-}
+
 
 .menu {
 	position: absolute;
@@ -329,7 +330,7 @@ body {
 			}
 		}
 	}
-}
+
 
 .close-menu-btn {
 	position: absolute;
