@@ -74,9 +74,9 @@ $kattexts=substr($kattexts,0,-1);
     
     
 </div>
-
-  <a href="?task=home" data-role="button"  class="ui-link ui-btn ui-icon-back ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ">Zurück</a>
-
+<a href="?task=home">
+  <i href="?task=home" data-role="button"  class="fas fa-angle-double-left"></i>
+</a>
 
 
 
