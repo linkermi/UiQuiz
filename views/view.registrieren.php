@@ -1,3 +1,5 @@
+<div id="Johnny">
+
 <div id="aaa" style="z-index: 4;opacity: 0.5;position: absolute"> 
 
 <?php
@@ -21,22 +23,27 @@ $avatars=Core::$view->avatars;
 
 
 
+<style> #login{
+    background-color: #f90a0a !important/*{a-bup-background-color}*/;}
+
+
+</style>
+
+
+</div>
+
 <style>
-html, body {
-  display: block;
+    #Johnny{display: block;
   position: relative; 
   overflow: hidden; 
   max-width: 100vw; 
   min-height: 100vh; 
   margin: 0; 
   padding: 0;
-}
-body {
   background-image: url( 'https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg' ); 
   background-color: black; 
   background-position: center bottom; 
   background-repeat: no-repeat; 
-  background-size: cover; 
-}
-
+  background-size: cover; }
+    
 </style>
