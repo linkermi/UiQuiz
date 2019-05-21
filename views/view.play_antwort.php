@@ -1,3 +1,6 @@
+
+
+
 <style>
     progress{
           background-image:
@@ -5839,19 +5842,4 @@ if (IS_HEADER) {
   ?>
     
     
-    
-</div>
-    <?php
-    if($spiel->status0!=2){
-    ?>
-<form name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
- <button type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
-    
-</form> 
-    <?php
-    }
-    ?>
-    <a href="?task=home">  
-  <i href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
-    </a>
-
+ 
