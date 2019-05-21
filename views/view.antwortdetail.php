@@ -3,6 +3,9 @@
 
 $antwort=Core::$view->antwort;
 ?>
+
+
+
 <form id="form_antwort" method="post" action="?task=antwortdetail" data-ajax="false">
     <div class="ui-field-contain">
              <label for="beschreibung">Antwort:</label><textarea  name="Antworttext" id="beschreibung" placeholder="Antwort" ><?=$antwort->Antworttext?></textarea>
