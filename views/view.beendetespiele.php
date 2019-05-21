@@ -56,7 +56,11 @@ $liste=Core::$view->beendeteSpiele;
         <td class="result"><?=$item->standingA.$item->standingB?></td>
         <td><?=Help::toDateShort($item->m_ts)?></td>
         <td><?=$item->ergebnis?></td>
-        <td width="30px" ><a href="?task=archivdetail&id=<?=$item->m_oid?>" class="ui-link ui-btn ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all ui-mini" data-ajax="false"     > </a></td>
+        <td width="60px" >
+            <a href="?task=archivdetail&id=<?=$item->m_oid?>"  data-ajax="false"  > 
+                <i href="?task=archivdetail&id=<?=$item->m_oid?>" class="fas fa-search"></i>
+            </a>
+        </td>
         
 </tr>
 <?php }
