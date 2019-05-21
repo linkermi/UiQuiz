@@ -1234,7 +1234,8 @@ border-radius: 1em /*{global-radii-blocks}*/;
      border-radius: 2px;
      text-align: center;
      vertical-align: middle;
-     
+     margin-left: 3px;
+    margin-right: 3px;
 }
 .wrongAnswer{
         width: 50px;
@@ -1244,8 +1245,8 @@ border-radius: 1em /*{global-radii-blocks}*/;
     float: left;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: white;
     
 }
@@ -1257,8 +1258,8 @@ border-radius: 1em /*{global-radii-blocks}*/;
     float: left;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: black;
 }
 .result{
@@ -1308,6 +1309,7 @@ border-radius: 1em /*{global-radii-blocks}*/;
     margin: 0em;
     width: 80px;
     height: 50px;
+    margin-left:20%
 }
 
  #laufend .openAnswer,#beendet .openAnswer{
@@ -1429,13 +1431,7 @@ h5 {
     font-size: 0.8em;
 }
 
-#laufend .ui-btn,#beendet .ui-btn{
-    height: 50px;
-    width: 80px;
-    background-position-x: 5px;
-    margin-left: 0px;
-    
-}
+
 
 #spielcreate .ui-radio label{
     -webkit-border-radius: 1em /*{global-radii-blocks}*/;
@@ -1830,4 +1826,6 @@ text-align: center;
     color:yellow;
     font-size:36px;
 }
-
+#laufend > tbody > tr > td:nth-child(4) > a > i{
+    font-size: 50px;
+}
