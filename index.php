@@ -87,7 +87,9 @@
     
   
     <div id="menu">
-       	  <a href="#menupanel" data-role="button" data-icon="bars" data-mini="true" data-iconpos="notext" data-inline="true" class="ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ui-mini"></a>
+        <a href="#menupanel" data-role="button">
+          <i  class="fas fa-chevron-circle-down"></i>
+        </a>
          <?php 
          echo "".core::$title ;
          if ($core::$user->nickname!=""){
