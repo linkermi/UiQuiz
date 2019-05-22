@@ -248,7 +248,10 @@ color: #000000 /*{a-page-color}*/;
 text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
         font-size: 20px;
         margin-left: 250px;
-       
+ 
+    
+
+
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
@@ -971,7 +974,7 @@ width: 100%;
         color: #000000;
         text-shadow: none;
         font-weight: bold;
-        background-color: #bbbbbb;
+        background-color: #ef9104;;
         font-family: cursive
       
 }
@@ -1037,8 +1040,10 @@ font-size:32px;
         margin-left: 5%;
     font-size: 150%;
     margin-right: 0%;
-    margin-top: 20%;
+    margin-top: 0;
     width: 80%;
+    position: absolute;
+    top: 1%;
 }
 #login {
     font-size:36px;
@@ -1179,13 +1184,13 @@ padding: 0px;
 }
 
 #page1{
-    background-image: url( 'https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg' );
+   /* background-image: url( 'https://images.wallpaperscraft.com/image/mountains_night_sky_stars_92704_2560x1440.jpg' );
     background-position: bottom; 
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     
     
-/*top: 40px;
-background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(251, 255, 0, 0.45));*/
+top: 40px;
+background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(251, 255, 0, 0.45));
   /*display: block;
   position: relative; 
   overflow: hidden; 
