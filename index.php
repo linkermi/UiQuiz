@@ -157,6 +157,9 @@ setTimeout(fadeMessage, 2500);
       <div id="view4">
     <?php Core::$view->render("view4");?>
    </div>
+      <div id="view5">
+    <?php Core::$view->render("view5");?>
+   </div>
  </div>
   <?php if(core::$debugMode==1){?>
   <div id="debug">
@@ -190,7 +193,15 @@ setTimeout(fadeMessage, 2500);
 
 </div>
     
-   
+ 
+    
+<iframe id="reh1" src="views/view.Reh.php" width="100%" height="100%" style="z-index: 3"></iframe>
+ 
+    <style> #reh1{
+        width: 100%;height: 100%;position: absolute; top: 30%; border:none !important;
+}
+        
+    </style>
 </body>
 
 </html>
