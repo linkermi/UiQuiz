@@ -18,7 +18,7 @@ $antworten=Core::$view->Antworten;
     }
 </style>
 
-  <div class= "ui-btn-active ui-btn ui-corner-all"><b><?=Core::$view->ergebnisText?></b></div>
+  <b><?=Core::$view->ergebnisText?></b>
 
   <div class="ui-grid-a">
         <div class="ui-block-a points"><img style="border-radius: 2em;margin-top: 3px;margin-right: 5px;" src="includes/images/<?=$ersteller->avatar?>" alt="avatar" width="100" height="100"/></div>   
