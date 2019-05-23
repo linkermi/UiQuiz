@@ -18,9 +18,8 @@
 <script src="p5/p5.min.js"></script>
 
 <!-- scripte für die sich auflößende box -->
- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
- <script src="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+ 
+
 <!-- Hallo -->
 
 <script type="text/javascript">
