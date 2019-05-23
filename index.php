@@ -193,15 +193,9 @@ setTimeout(fadeMessage, 2500);
 
 </div>
     
- 
+  
     
-<iframe id="reh1" src="views/view.Reh.php" width="100%" height="100%" style="z-index: 3"></iframe>
- 
-    <style> #reh1{
-        width: 100%;height: 100%;position: absolute; top: 30%; border:none !important;
-}
-        
-    </style>
+
 </body>
 
 </html>
