@@ -147,7 +147,7 @@ setTimeout(fadeMessage, 2500);
   Core::$view->render("view1");
     ?>
    </div>
-   <div id="view2">
+   <div id="view2" style="z-index: 4">
     <?php Core::$view->render("view2");?>
    </div>
     <div id="view3">

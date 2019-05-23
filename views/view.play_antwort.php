@@ -233,13 +233,13 @@ if($spiel->wait){
     <?php
     if($spiel->status0!=2){
     ?>
-<form style="z-index: 4" name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
- <button style="z-index: 4" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
+<form style="z-index: 5" name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
+ <button style="z-index: 5" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
 </form> 
     <?php
     }
     ?>
-    <a href="?task=home" style="z-index: 4">  
-  <i style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
+    <a href="?task=home" style="z-index: 5">  
+  <i style="z-index: 5" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
     </a>
