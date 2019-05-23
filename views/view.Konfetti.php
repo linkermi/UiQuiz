@@ -17,6 +17,7 @@
   width: 100%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(251, 255, 0, 0.45));
   background-color:white; 
+  opacity:0.5;
 }
 
 
