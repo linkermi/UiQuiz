@@ -1043,7 +1043,7 @@ font-size:32px;
     margin-top: 0;
     width: 80%;
     position: absolute;
-    top: 1%;
+    top: 120%;
 }
 #login {
     font-size:36px;
@@ -1076,9 +1076,7 @@ font-size:32px;
     font-family: cursive;
 }
 
-#page1 {
-    margin-top: 100px;
-}
+
 #laufend > tbody > tr:nth-child(1) > td:nth-child(4) > a{
     
 }
@@ -1701,7 +1699,7 @@ text-align: center;
 }
 
 #progressBar {
-      max-width: 85%;
+      max-width: 80%;
     height: 60px;
 }
 
@@ -1783,6 +1781,7 @@ text-align: center;
 #view1 > div:nth-child(3) {
     width: 100%;
     font-size: 200%;
+    margin-top:20%;
 }
 #view1 > div:nth-child(8) {
     width: 100%;
@@ -1798,7 +1797,7 @@ text-align: center;
 }
 #category{
     margin-left: 0%;
-    margin-top: 5%;
+    
     width: 100%!important;
     height: 60%!important;
     background-size: 50%!important;
@@ -1830,9 +1829,10 @@ text-align: center;
     visibility:hidden;
 }
 #view1 > div {
-        margin-top: 10%;
+        
     width: 100%;
-    font-size: 40px
+    font-size: 40px;
+    
 }
 #lastResult > p {
         margin-left: 22%;
@@ -1871,4 +1871,13 @@ text-align: center;
 }
 #views > a > i {
         font-size: 60px;
+}
+#view1 > details {
+    margin-top: 10%;
+}
+#spielcreate {
+    margin-top: 15%;
+}
+#bbb {
+    margin-top:10%;
 }
