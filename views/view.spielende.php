@@ -74,8 +74,8 @@ $kattexts=substr($kattexts,0,-1);
     
     
 </div>
-<a href="?task=home">
-  <i href="?task=home" data-role="button"  class="fas fa-angle-double-left"></i>
+<a href="?task=home" >
+  <i  data-role="button"  class="fas fa-angle-double-left"></i>
 </a>
 
 
