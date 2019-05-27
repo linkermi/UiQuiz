@@ -974,7 +974,7 @@ width: 100%;
         color: #000000;
         text-shadow: none;
         font-weight: bold;
-        background-color: red;
+        background-color: coral;
         font-family: cursive
       
 }
@@ -1153,6 +1153,7 @@ text-align: left;
 }
 #view1{
 /* min-height:200px; */
+margin-top:15%;
        
 }
 #container1 .emojionearea-editor {
@@ -1242,7 +1243,7 @@ border-radius: 1em /*{global-radii-blocks}*/;
 }
 .ui-content{
     padding: 0 !important;
-    margin-top:50px;
+   
 }
 
 .openAnswer{
@@ -1802,6 +1803,7 @@ text-align: center;
     height: 60%!important;
     background-size: 50%!important;
     font-size: 60px!important;
+    margin-top: 10%;
 }
 #view1 > details > summary::-webkit-details-marker {
   display: none
