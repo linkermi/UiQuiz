@@ -1,5 +1,5 @@
 
-var timeleft = 500;
+var timeleft = 50000;
 var downloadTimer = setInterval(function(){
   document.getElementById("progressBar").value = (500 - --timeleft);
 
