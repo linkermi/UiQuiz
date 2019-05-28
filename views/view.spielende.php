@@ -60,10 +60,16 @@ foreach(Core::$view->kategorien as $kat){
 $kattexts=substr($kattexts,0,-1);
 ?> 
   
-
-<div class="result">
-    <?=$spiel->standingA;?><?=$spiel->standingB;?>
+<div id="Sortierung">
+<div class="resultA" style="width: 25%;float: left ;padding-left: 15%;">
+    <?=$spiel->standingA;?>
 </div>
+
+<div class="resultB" style="width: 25%;float: right;padding-right: 15%;">
+    <?=$spiel->standingB;?>
+</div>
+</div>
+
 <div style="clear: both"><small><?=$kattexts?></small></div>
 <div style="clear: both" class="ui-btn-active ui-btn ui-corner-all">Rating</div>
 <div class="ui-grid-a" >
