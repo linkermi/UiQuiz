@@ -173,34 +173,40 @@ if($spiel->wait){
 }
   /* @var $frage Frage */
 /* @var $item Antwort */?>
-<div style="z-index: 4" id="lastResult">
+<div  id="lastResult">
 <?php
     if($Ergebnis=="richtig"){
     ?>
     
-    <div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px ; z-index:3;">
     
-        <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index: 3; border:none;"></iframe>
-    </div>
+    
+       
+     
     
     <div style="z-index: 4" class= "richtig ui-btn ui-corner-all <?php if($Ergebnis=="richtig") echo"ui-btn-active";?>">RICHTIG</div>
-    <div style="z-index: 4"><?=$runde->Zeit?> Sekunden => <?=$runde->TP?> TP</div>
+    <div style="z-index: 4"><?=$runde->Zeit?> Sekunden => <?=$runde->TP?> TP
+       
+    </div>
+    <div style="z-index:3" width="100%" height="100%">    
+    <iframe src="views/view.Feuerwerk.php" width="100%" height="100%"  ></iframe>
+        </div>
     
     
     <?php
 }if($Ergebnis=="zu spät"){
     ?>
     
-     <div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px ; z-index:3;">
+     
     
-        <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index: 3; border:none;"></iframe>
-    </div>
+        
+   
 
-    <div style="z-index: 4" class= "zuspaet ui-btn ui-corner-all ui-btn-inactive" style="z-index: 4;">ZU SPÄT</div>
-    <p style="z-index: 4">Die richtige Antwort lautet</p>
-    <div style="z-index: 4" class= "ui-btn ui-corner-all ui-btn-active" style="z-index: 4"><?=$antwortKorrekt->Antworttext;?></div>
-    
-    
+    <div style="z-index: 4"  class= "zuspaet ui-btn ui-corner-all ui-btn-inactive" >ZU SPÄT</div>
+    <p >Die richtige Antwort lautet</p>
+
+    <div style="z-index: 4" class= "ui-btn ui-corner-all ui-btn-active" ><?=$antwortKorrekt->Antworttext;?></div>
+  
+   
    
     
     <?php
@@ -209,17 +215,16 @@ if($spiel->wait){
       ?>
     
     
-     <div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px ; z-index:3;">
+     
     
-        <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index: 3; border:none;"></iframe>
-    </div>
+        
     
     
-    <div style="z-index: 4"class= "falsch ui-btn-active ui-btn ui-corner-all ui-btn-inactive">FALSCH</div>
-    <p style="z-index: 4">Die richtige Antwort lautet</p>
+    <div style="z-index: 4" class= "falsch ui-btn-active ui-btn ui-corner-all ui-btn-inactive">FALSCH</div>
+    <p >Die richtige Antwort lautet</p>
+   
     <div style="z-index: 4" class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
-   
-   
+    
     <?php
     
     
@@ -233,13 +238,13 @@ if($spiel->wait){
     <?php
     if($spiel->status0!=2){
     ?>
-<form style="z-index: 5" name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
- <button style="z-index: 5" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
+<form style="z-index: 4"  name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
+ <button style="z-index: 4" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
 </form> 
     <?php
     }
     ?>
-    <a href="?task=home" style="z-index: 5">  
-  <i style="z-index: 5" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
+    <a href="?task=home" style="z-index: 4" >  
+  <i  style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
     </a>

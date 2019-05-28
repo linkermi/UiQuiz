@@ -13,7 +13,7 @@ if($spiel->wait){
 }
 ?>
 
- <div class="ui-grid-a">
+ <div style="z-index: 4" class="ui-grid-a">
       <div class="ui-block-a players"><?php
     if($spiel->Ersteller==Core::$user->m_oid){
         echo"<i>".$spiel->Host."</i>";
@@ -50,10 +50,10 @@ if($spiel->wait){
 
 
 
-<form name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
- <button type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
+<form style="z-index: 4" name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
+ <button style="z-index: 4" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
 </form>
-<a href="?task=home">
- <i href="?task=home" data-role="button"  class="fas fa-angle-double-left"></i>
+<a style="z-index: 4" href="?task=home">
+ <i style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left"></i>
 </a>
