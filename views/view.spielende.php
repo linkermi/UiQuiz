@@ -71,7 +71,7 @@ $kattexts=substr($kattexts,0,-1);
 </div>
 
 <div style="clear: both"><small><?=$kattexts?></small></div>
-<div style="clear: both" class="ui-btn-active ui-btn ui-corner-all">Rating</div>
+<div style="clear: both; padding-top:40px;" class="ui-btn-active ui-btn ui-corner-all">Rating</div>
 <div class="ui-grid-a" >
     <div class="players ui-block-a"><?php printf("%+d",$spiel->ratingPointsA)?></div>
     <div class="players ui-block-b"> <?php printf("%+d",$spiel->ratingPointsB)?></div>
