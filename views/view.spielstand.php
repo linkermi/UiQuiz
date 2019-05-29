@@ -22,17 +22,17 @@ if($spiel->wait){
     }
                 
     ?></div>
-    <div class="ui-block-b players"><?php
+    <div style="z-index: 4" class="ui-block-b players"><?php
   if($spiel->Teilnehmer==Core::$user->m_oid){
         echo"<i>".$spiel->Gast."</i>";
     }else{
          echo $spiel->Gast;
     }
 ?></div>  
-    <div class="ui-block-a points"><?=$spiel->punkteA?>(<?=$spiel->fragenA?>)</div>   
-    <div class="ui-block-b points" ><?=$spiel->punkteB?>(<?=$spiel->fragenB?>)</div>  
-    <div class="ui-block-a times"><?=$spiel->TPA?> TP</div>
-    <div class="ui-block-b times"><?=$spiel->TPB?> TP</div>
+    <div style="z-index: 4" class="ui-block-a points"><?=$spiel->punkteA?>(<?=$spiel->fragenA?>)</div>   
+    <div style="z-index: 4" class="ui-block-b points" ><?=$spiel->punkteB?>(<?=$spiel->fragenB?>)</div>  
+    <div style="z-index: 4" class="ui-block-a times"><?=$spiel->TPA?> TP</div>
+    <div style="z-index: 4" class="ui-block-b times"><?=$spiel->TPB?> TP</div>
   </div>
  
 
