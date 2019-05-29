@@ -17,171 +17,112 @@ $Teilnehmer=Core::$view->Teilnehmer;
 </form>
 
 
-<style> .element-animation{
-  animation: animationFrames linear 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  -webkit-animation: animationFrames linear 1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -moz-animation: animationFrames linear 1s;
-  -moz-animation-iteration-count: 1;
-  -moz-transform-origin: 50% 50%;
-  -o-animation: animationFrames linear 1s;
-  -o-animation-iteration-count: 1;
-  -o-transform-origin: 50% 50%;
-  -ms-animation: animationFrames linear 1s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%;
+
+<div class="box">
+	<a class="button" href="#popup1">Hilfe</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Erklärung:</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Hallo lieber Spieler, Sie können 2 Kategorien auswählen, Ihr Gegner wählt die nächsten 2 Kategorien !
+		</div>
+	</div>
+</div>
+
+<Style>
+body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-@keyframes animationFrames{
-  0% {
-    transform:  translate(0px,0px)  rotate(0deg) ;
-  }
-  15% {
-    transform:  translate(-25px,0px)  rotate(-5deg) ;
-  }
-  30% {
-    transform:  translate(20px,0px)  rotate(3deg) ;
-  }
-  45% {
-    transform:  translate(-15px,0px)  rotate(-3deg) ;
-  }
-  60% {
-    transform:  translate(10px,0px)  rotate(2deg) ;
-  }
-  75% {
-    transform:  translate(-5px,0px)  rotate(-1deg) ;
-  }
-  100% {
-    transform:  translate(0px,0px)  rotate(0deg) ;
-  }
+
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
 }
 
-@-moz-keyframes animationFrames{
-  0% {
-    -moz-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
-  15% {
-    -moz-transform:  translate(-25px,0px)  rotate(-5deg) ;
-  }
-  30% {
-    -moz-transform:  translate(20px,0px)  rotate(3deg) ;
-  }
-  45% {
-    -moz-transform:  translate(-15px,0px)  rotate(-3deg) ;
-  }
-  60% {
-    -moz-transform:  translate(10px,0px)  rotate(2deg) ;
-  }
-  75% {
-    -moz-transform:  translate(-5px,0px)  rotate(-1deg) ;
-  }
-  100% {
-    -moz-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
 }
 
-@-webkit-keyframes animationFrames {
-  0% {
-    -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
-  15% {
-    -webkit-transform:  translate(-25px,0px)  rotate(-5deg) ;
-  }
-  30% {
-    -webkit-transform:  translate(20px,0px)  rotate(3deg) ;
-  }
-  45% {
-    -webkit-transform:  translate(-15px,0px)  rotate(-3deg) ;
-  }
-  60% {
-    -webkit-transform:  translate(10px,0px)  rotate(2deg) ;
-  }
-  75% {
-    -webkit-transform:  translate(-5px,0px)  rotate(-1deg) ;
-  }
-  100% {
-    -webkit-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-@-o-keyframes animationFrames {
-  0% {
-    -o-transform:  translate(0px,0px)  rotate(0deg) ;
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
   }
-  15% {
-    -o-transform:  translate(-25px,0px)  rotate(-5deg) ;
-  }
-  30% {
-    -o-transform:  translate(20px,0px)  rotate(3deg) ;
-  }
-  45% {
-    -o-transform:  translate(-15px,0px)  rotate(-3deg) ;
-  }
-  60% {
-    -o-transform:  translate(10px,0px)  rotate(2deg) ;
-  }
-  75% {
-    -o-transform:  translate(-5px,0px)  rotate(-1deg) ;
-  }
-  100% {
-    -o-transform:  translate(0px,0px)  rotate(0deg) ;
+  .popup{
+    width: 70%;
   }
 }
 
-@-ms-keyframes animationFrames {
-  0% {
-    -ms-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
-  15% {
-    -ms-transform:  translate(-25px,0px)  rotate(-5deg) ;
-  }
-  30% {
-    -ms-transform:  translate(20px,0px)  rotate(3deg) ;
-  }
-  45% {
-    -ms-transform:  translate(-15px,0px)  rotate(-3deg) ;
-  }
-  60% {
-    -ms-transform:  translate(10px,0px)  rotate(2deg) ;
-  }
-  75% {
-    -ms-transform:  translate(-5px,0px)  rotate(-1deg) ;
-  }
-  100% {
-    -ms-transform:  translate(0px,0px)  rotate(0deg) ;
-  }
-}
-    
-</style>
-  
-    <script type="text/javascript">
-  
-
-         $(function() {
-         $( "#dialog" ).dialog({
-             autoOpen: false,
-             show: {
-             effect: "blind",
-              duration: 1000
-                },
-            hide: {
-            effect: "explode",
-            duration: 1000
-               }
-              });
-           $( "#opener" ).click(function() {
-           $( "#dialog" ).dialog( "open" );
-            });
-            });
-    </script>
-
-   <div id="dialog" title="Obacht !">
-   <p>Hallo werter Spieler, hier kannst Du zwei Spielkategorien bestimmen aus einer Auswahl von 8 möglichen Kategorien. Du darfst nicht zweimal die gleiche Kategorie auswählen</p>
-  </div>
- 
-  <button id="opener">Hilfe- Was soll ich machen ?</button>
-
- 
+</style> 
