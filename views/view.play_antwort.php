@@ -240,6 +240,7 @@ if($spiel->wait){
     <?php
     if($spiel->status0!=2){
     ?>
+    
 <form style="z-index: 4"  name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
  <button style="z-index: 4" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
@@ -247,6 +248,7 @@ if($spiel->wait){
     <?php
     }
     ?>
-    <a style="z-index: 4" href="?task=home"  >  
-  <i  style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
+    <a style="z-index: 4" href="?task=home"   data-ajax="false">  
+  <i  style="z-index: 4"   class="fas fa-angle-double-left "></i>
     </a>
+    
