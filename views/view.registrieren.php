@@ -18,6 +18,10 @@ $avatars=Core::$view->avatars;
 	</div>
 </form>
 </div>
+<div style="width: 100%;height: 100%;position: absolute;margin-left: 0px;margin-top: 0px">
+    
+<iframe src="views/view.animation.php" width="100%" height="100%" style="z-index: 3"></iframe>
+</div>
 
 <style> #loginForm{
     background-color: #f90a0a !important/*{a-bup-background-color}*/
