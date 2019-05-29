@@ -25,8 +25,8 @@ $liste=Core::$view->bekannteSpieler;
       <td><?=$item->Partien?></td>
     
        <td >
-           <a href="?task=spielerstellen&id=<?=$item->m_oid?>" data-role="button">
-               <i href="?task=spielerstellen&id=<?=$item->m_oid?>" data-role="button" class="fas fa-plus-circle" > </i>
+           <a href="?task=spielerstellen&id=<?=$item->m_oid?>"  data-ajax="false">
+               <i  class="fas fa-plus-circle" > </i>
            </a>
        </td>
      

@@ -225,7 +225,7 @@ if($spiel->wait){
    
     <div style="z-index: 4" class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     
-    <div style="position:relative; left:30%"> <img src="http://www.clipartroo.com/images/75/sad-face-thumbs-down-clipart-75018.png" width="474" height="650"> </div>
+    <div style="position:relative; left:25%"> <img src="http://www.clipartroo.com/images/75/sad-face-thumbs-down-clipart-75018.png" width="474" height="650"> </div>
     
     <?php
     
@@ -240,6 +240,7 @@ if($spiel->wait){
     <?php
     if($spiel->status0!=2){
     ?>
+    
 <form style="z-index: 4"  name="formstart" id="start" action="?task=play2&id=<?=$spiel->m_oid?>" data-ajax="false" method="post">
  <button style="z-index: 4" type="submit" name="start" id="start" value="1" <?php if($spiel->wait)echo'disabled="disabled"';?>><?=$weiter?></button>
     
@@ -247,6 +248,7 @@ if($spiel->wait){
     <?php
     }
     ?>
-    <a style="z-index: 4" href="?task=home"  >  
-  <i  style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
+    <a style="z-index: 4" href="?task=home"   data-ajax="false">  
+  <i  style="z-index: 4"   class="fas fa-angle-double-left "></i>
     </a>
+    
