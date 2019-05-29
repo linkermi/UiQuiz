@@ -1259,7 +1259,8 @@ border-radius: 1em /*{global-radii-blocks}*/;
     margin-right: 3px;
 }
 .wrongAnswer{
-        width: 50px;
+    text-align:center; 
+    width: 50px;
     height: 50px;
     border: 1px #000 solid;
     background: darkred;
@@ -1272,7 +1273,8 @@ border-radius: 1em /*{global-radii-blocks}*/;
     
 }
 .correctAnswer{
-        width: 50px;
+    text-align:center;
+    width: 50px;
     height: 50px;
     border: 1px #000 solid;
     background: greenyellow;
