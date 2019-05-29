@@ -188,7 +188,7 @@ if($spiel->wait){
        
     </div>
     <div style="z-index:3" width="100%" height="100%">    
-    <iframe src="views/view.Feuerwerk.php" width="100%" height="100%"  ></iframe>
+        <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index:3" ></iframe>
         </div>
     
     
@@ -245,6 +245,6 @@ if($spiel->wait){
     <?php
     }
     ?>
-    <a href="?task=home" style="z-index: 4" >  
+    <a style="z-index: 4" href="?task=home"  >  
   <i  style="z-index: 4" href="?task=home" data-role="button"  class="fas fa-angle-double-left "></i>
     </a>
