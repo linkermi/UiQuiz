@@ -225,6 +225,8 @@ if($spiel->wait){
    
     <div style="z-index: 4" class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     
+    <div style="position:relative; left:30%"> <img src="http://www.clipartroo.com/images/75/sad-face-thumbs-down-clipart-75018.png" width="474" height="650"> </div>
+    
     <?php
     
     
