@@ -1027,8 +1027,9 @@ text-align:center;
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    margin-top: 20%;
-    margin-left: 25%
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: 5%;
 
 }
 #view1 > a:nth-child(3) > p{
@@ -1912,4 +1913,15 @@ body > canvas {
     height: 100%;
     opacity: 0.5;
     width: 100%;
+}
+#view2 > div:nth-child(6) {
+    text-align:center;
+}
+#view2 > div.ui-btn-active.ui-btn.ui-corner-all {
+    margin-left:20%;
+}
+#view2 > b {
+        text-align: center;
+    font-size: 40px;
+    margin-left: 30%;
 }
