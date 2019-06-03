@@ -53,8 +53,7 @@ $avatars=Core::$view->avatars;
   background-size: cover; }
     
 </style> -->
-
-<iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/XUWnrhKTu9M?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-</iframe> 
+<audio controls autoplay style="visibility:hidden;">
+    <source src="music/Ambient-intro-music.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+</audio>
