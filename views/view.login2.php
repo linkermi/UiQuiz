@@ -18,9 +18,9 @@
     <iframe src="views/view.animation.php" width="100%" height="100%" style="z-index: 3"></iframe> 
 </div>
 
-<audio controls autoplay>
-  <source src="music/button-3.mp3" type="audio/mpeg">
-Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+<audio controls autoplay style="visibility:hidden;">
+    <source src="music/Ambient-intro-music.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
 </audio>
 
 
