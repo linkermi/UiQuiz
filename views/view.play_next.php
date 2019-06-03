@@ -164,20 +164,14 @@ $Ergebnis=  Core::$view->Ergebnis;
     ?>
     <div class= "ui-btn ui-corner-all<?php if($Ergebnis=="richtig") echo"ui-btn-active";?>">RICHTIG</div>
     <div><?=$runde->Zeit?> Sekunden</div>
-    <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/xP1b_uRx5x4?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe>
+  
     <?php
 }if($Ergebnis=="zu spät"){
     ?>
     <div class= "ui-btn ui-corner-all ui-btn-inactive">ZU SPÄT</div>
     <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn ui-corner-all ui-btn-active"><?=$antwortKorrekt->Antworttext;?></div>
-      <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/zpG1Ywmbioc?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe> 
+     
     
     <?php
 }
@@ -187,10 +181,11 @@ $Ergebnis=  Core::$view->Ergebnis;
     <p>Die richtige Antwort lautet</p>
     <div class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     <div><?=$runde->Zeit?> Sekunden</div>
-     <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/zpG1Ywmbioc?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe> 
+     
+    <audio controls autoplay>
+    <source src="music/Disappoint-fail-timpani-crash-sound-effect.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+            </audio>
     <?php
     
     
