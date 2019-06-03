@@ -191,12 +191,7 @@ if($spiel->wait){
         <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index:3" ></iframe>
         
         </div>
-    <div>
-    <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/xP1b_uRx5x4?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe> 
-    </div>    
+       
     <?php
 }if($Ergebnis=="zu spät"){
     ?>
@@ -211,10 +206,7 @@ if($spiel->wait){
 
     <div style="z-index: 4" class= "ui-btn ui-corner-all ui-btn-active" ><?=$antwortKorrekt->Antworttext;?></div>
   
-    <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/zpG1Ywmbioc?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe> 
+    
    
     
     <?php
@@ -223,7 +215,7 @@ if($spiel->wait){
       ?>
     
         
-     
+         
     
         
     
@@ -234,11 +226,11 @@ if($spiel->wait){
     <div style="z-index: 4" class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     
     <div style="position:relative; left:25%"> <img src="http://www.clipartroo.com/images/75/sad-face-thumbs-down-clipart-75018.png" width="474" height="650"> </div>
+     <audio controls autoplay>
+    <source src="music/Disappoint-fail-timpani-crash-sound-effect.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+            </audio>
     
-    <iframe visibilty="none" width="0" height="0" src="https://www.youtube.com/embed/zpG1Ywmbioc?autoplay=1&loop=1"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allow="autoplay"
-        allowfullscreen>           
-    </iframe> 
     <?php
     
     
