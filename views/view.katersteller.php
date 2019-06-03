@@ -13,13 +13,5 @@ $Teilnehmer=Core::$view->Teilnehmer;
 		 <?php Help::htmlSelect($kategorien,array("type"=>"buttonmini", "label"=>"Kategorie 2","name"=>"Kategorie2"))?>
             <br>
               <button class="element-animation" type="submit" name="create" id="create" value="1">Herausfordern</button>
-        <script>
-var audioUrl = 'https://freesound.org/data/previews/172/172490_3192597-lq.mp3';
 
-// SIMPLE EXEMPLE
-var audio = new Audio(audioUrl); // define your audio
-$('#create').click( () => audio.play() ); // that will do the trick !!
-</script>
-        
-        
         
