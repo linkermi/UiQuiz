@@ -17,34 +17,11 @@ $a=1;
 
 
 
- <div id="dialog" title="Obacht !">
-   <p>Hallo werter Spieler, hier kannst Du zwei Spielkategorien bestimmen aus einer Auswahl von 8 möglichen Kategorien. Du darfst nicht zweimal die gleiche Kategorie auswählen</p>
-  </div>
+
+
+
+
+  
  
-  <button id="opener">Hilfe- Was soll ich machen ?</button>
-
-
-
-  
-    <script type="text/javascript">
-  
-
-         $(function() {
-         $( "#dialog" ).dialog({
-             autoOpen: false,
-             show: {
-             effect: "blind",
-              duration: 1000
-                },
-            hide: {
-            effect: "explode",
-            duration: 1000
-               }
-              });
-           $( ".ui-link  ui-btn ui-icon-plus ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all" ).click(function() {
-           $( "#dialog" ).dialog( "open" );
-            });
-            });
-    </script>
 
   
