@@ -191,7 +191,10 @@ if($spiel->wait){
         <iframe src="views/view.Konfetti.php" width="100%" height="100%" style="z-index:3" ></iframe>
         
         </div>
-       
+       <audio controls autoplay style="visibility:hidden;">
+    <source src="music/Football-fans-trumpet-sound.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+            </audio>
     <?php
 }if($Ergebnis=="zu spät"){
     ?>
@@ -206,7 +209,10 @@ if($spiel->wait){
 
     <div style="z-index: 4" class= "ui-btn ui-corner-all ui-btn-active" ><?=$antwortKorrekt->Antworttext;?></div>
   
-    
+    <audio controls autoplay style="visibility:hidden;">
+    <source src="music/Disappoint-fail-timpani-crash-sound-effect.mp3" type="audio/mpeg">
+            Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+            </audio>
    
     
     <?php
@@ -226,7 +232,7 @@ if($spiel->wait){
     <div style="z-index: 4" class= "ui-btn-active ui-btn ui-corner-all"><?=$antwortKorrekt->Antworttext;?></div>
     
     <div style="position:relative; left:25%"> <img src="http://www.clipartroo.com/images/75/sad-face-thumbs-down-clipart-75018.png" width="474" height="650"> </div>
-     <audio controls autoplay>
+     <audio controls autoplay style="visibility:hidden;">
     <source src="music/Disappoint-fail-timpani-crash-sound-effect.mp3" type="audio/mpeg">
             Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
             </audio>
