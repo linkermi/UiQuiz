@@ -9,6 +9,8 @@ if(count($_POST)>0){
    if ($kat1==$kat2 || is_null($kat1) || is_null($kat2)){
    
        Core::redirect("spielerstellen",array("id"=>$id,"message"=>"Bitte <b>zwei</b> unterschiedliche Kategorien auswählen"));
+     
+
        exit;
    }
    // Variablen festlegen
