@@ -12,7 +12,7 @@
 <audio style="display:none" preload="auto" autoplay id="audio" controls source src="https://aredir.nixcdn.com/Unv_Audio71/HappyNewYear-ABBA-1595921.mp3?st=g1zQ-Zu8tL--3qjPlRIq6w&amp;e=1546353858">
 </audio>
         <style>
-       @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+       
 *{
   font-family: 'Allerta Stencil', sans-serif;
 }
